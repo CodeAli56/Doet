@@ -7,6 +7,6 @@ import { loginUser, logout, updateDetails, changeUserPassword, registerUser, get
 const userRouter = Router();
 
 userRouter.route("/register").post( upload.single("avatar"), registerUser)
-
+userRouter.route("/login").post(loginUser)
 
 export { userRouter }
